@@ -6,7 +6,11 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <div>Hero</div>
+      <div>
+        <h1>Hero</h1>
+ 
+      </div>
+      
     </>
   );
 };
