@@ -1,16 +1,15 @@
-@import "../../styles/theme/typography.scss";
-@import "../../styles/variables.scss";
+@import "../../../../styles/theme/typography.scss";
+@import "../../../../styles/variables.scss";
 
 .homePage {
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
 
     @media (min-width: $desktop-viewport-width) {
         padding-left: 127px;
         padding-right: 115px;
-   
     }
 
               

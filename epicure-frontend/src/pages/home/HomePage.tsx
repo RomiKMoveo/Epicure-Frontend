@@ -1,13 +1,11 @@
 import "./HomePage.scss";
-// import {
-//   AboutSection,
-//   ChefOfTehWeekSection,
-//   DishSection,
-//   RestSection,
-//   SignatureSection,
-//   Hero, 
-//   OrderSuccess
-// } from "../../components";
+import About from "./components/About/About";
+import Chef from "./components/Chef/Chef";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import IconsMeaning from "./components/IconsMeaning/IconsMeaning";
+
 
 
 
@@ -15,15 +13,19 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-    <h1> hi</h1>
-      {/* <div onClick={sendCloseNavbar}>
-         <Header />
+      <div className="homePage">
+ 
+        <div className="App">
+            <Header />
             <Hero />
+            <h1>popular restaurant in epicure:</h1>
+            <h1>Signature Dish Of:</h1>
             <IconsMeaning />
             <Chef />
             <About />
             <Footer />
-      </div> */}
+        </div>
+      </div>      
     </>
   );
 };
