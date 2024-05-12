@@ -1,15 +1,68 @@
 @import "../../../../data/types/typography.scss";
 @import "../../../../data/variables.scss";
+@import "../../../../data/UI/colors.scss";
 
-.homePage {
+.icons-meaning-container {
+    background-color: $secondary-color-offWite;
     display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4%;
+    @media (min-width: $desktop-viewport-width) {
+        gap: 32px;
+    }
+  
+  .icons-meaning-title {
+    @include h2();
+    font-size: 18px;
+    letter-spacing: 1.25px;
+  }
+  
+  .icons-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0px;
 
     @media (min-width: $desktop-viewport-width) {
-        padding-left: 127px;
-        padding-right: 115px;
+      flex-direction: row;
     }
+    
+        .icon-meaning-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 56px;
+            width: 136px;
+            height: 127px;
 
-              
+            @media (min-width: $desktop-viewport-width) {
+                margin-bottom: 0%;
+                
+            }
+            
+        }
+      
+         .icon-img {
+            width: 56px;
+            height: 56px;
+            margin-bottom: 32px;
+
+            @media (min-width: $desktop-viewport-width) {
+                width: 77px;
+                height: 60px;
+            }
+        
+        }
+
+        .icon-caption {
+            @include h2();
+            letter-spacing: 1.97px;
+            text-align: center;
+            font-size: 18px;
+            @media (min-width: $desktop-viewport-width) {
+                font-size: 24px;
+            }
+        }
+    }
 }
