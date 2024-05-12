@@ -1,14 +1,18 @@
 import "./Footer.scss";
+import { Link } from 'react-router-dom';
 
 
-
-const HomePage: React.FC = () => {
-
+const Footer: React.FC = () => {
   return (
     <>
-      <div>Footer</div>
+      <footer>
+        <div className="footer-links">
+          <Link to="/" className="link">Contact Us</Link>
+          <Link to="/" className="link">Term of Use</Link>
+          <Link to="/" className="link">Privacy Policy</Link>
+        </div>
+      </footer>
     </>
   );
 };
-
-export default HomePage;
+export default Footer;

@@ -1,16 +1,61 @@
 @import "../../../../data/types/typography.scss";
 @import "../../../../data/variables.scss";
+@import "../../../../data/UI/colors.scss";
 
-.homePage {
+
+footer {
     display: flex;
-    //flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 202px;
+    top: 3763px;
+    gap: 0px;
+    opacity: 0px;
+
 
     @media (min-width: $desktop-viewport-width) {
-        padding-left: 127px;
-        padding-right: 115px;
+        height: 84px;
+        padding-bottom: 21px;
+        gap: 0px;
+        opacity: 0px;
+        align-items: center;
+        
+        
     }
 
-              
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        width: Hug (126px)px;
+        height: Hug (146px)px;
+        padding-top: 32px;
+        padding-left: 19px;
+        gap: 40px;
+        text-align: start;
+
+
+        @media (min-width: $desktop-viewport-width) {
+            flex-direction: row;
+            padding-top: 31px;
+            padding-bottom: 31px;
+            padding-left: 0px;
+            gap: 40px;
+            
+
+        }
+    
+        .link {
+            @include h2();
+            font-size: 18px;
+            text-decoration: none;
+
+            @media (min-width: $desktop-viewport-width) {
+                font-size: 18px;
+                text-decoration: none; 
+            }
+            
+        }
+    }
+    
 }
