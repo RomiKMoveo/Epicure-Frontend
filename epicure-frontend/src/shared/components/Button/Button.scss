@@ -1,0 +1,29 @@
+@import "../../../data/types/typography.scss", "../../../data/variables.scss", "../../../data/UI/colors.scss..";
+
+.btn {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  padding: 5px 24px;
+  cursor: pointer;
+  @include button();
+  height: 1000px;
+  width: 206px;
+  height: 48px;
+  .icon-container {
+    display: none;
+  }
+}
+
+.icon-btn {
+  padding: 5px 16px;
+  gap: 10px;
+  .icon-container {
+    display: block;
+    width: 21px;
+    height: 24px;
+  }
+}
+.disabled {
+  background-color: $secondary-gray;
+  cursor: no-drop;
+}
