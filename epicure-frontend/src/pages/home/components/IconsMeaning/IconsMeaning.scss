@@ -1,15 +1,35 @@
 @import "../../../../data/types/typography.scss";
 @import "../../../../data/variables.scss";
+@import "../../../../data/UI/colors.scss";
 
-.homePage {
+.icons-meaning-container {
+    background-color: $secondary-color-offWite;
     display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4%;
 
     @media (min-width: $desktop-viewport-width) {
-        padding-left: 127px;
-        padding-right: 115px;
+        gap: 32px;
     }
+  
+  .icons-meaning-title {
+    @include h2();
+    font-size: 18px;
+    letter-spacing: 1.25px;
+  }
+  
+  .icons-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0px;
+    column-gap: 40px;
 
-              
+    @media (min-width: $desktop-viewport-width) {
+        flex-direction: row;
+        row-gap: 40px;
+    }
+  }  
+    
 }
