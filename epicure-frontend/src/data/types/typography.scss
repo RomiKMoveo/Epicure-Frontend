@@ -18,7 +18,7 @@ h1 {
     }
 }
 
-h2 {
+@mixin h2() {
     @include font-style();
     font-weight: 200;
     font-style: normal;
