@@ -16,11 +16,12 @@ const About: React.FC = () => {
 
         <div className="about-contact-container">
           <div className="button-container">
-            <img className="button-logo" src={appleStore} alt="applePay" />
-            <img className="button-logo" src={googlePlay} alt="googlePay" />
+            <img src={appleStore} alt="applePay" />
+            <img src={googlePlay} alt="googlePay" />
           </div>
 
           <div className="contact-title">ABOUT US:</div>
+          
           <div className="contact-text">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a
@@ -35,6 +36,7 @@ const About: React.FC = () => {
                 malesuada eros.
               </p>
             </div>
+          
           </div>
       </section>
     </>

@@ -2,42 +2,35 @@
 @import "../../../../data/variables.scss";
 
 .about {
-    @include desktop-padding();
+    @include desktop-padding;
     background-color: $secondary-color-offWite;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-
+    gap: 32px;
 
     @media (min-width: $desktop-viewport-width) {
         flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
+        align-items: center;  
+        gap: 85px;
     }
 
     .epicure-logo-container {
-        padding-top: 5%;
-        padding-bottom: 5%;
-        margin-left: 6%;
-          
-        @media (min-width: $desktop-viewport-width) {
-            margin-left: 5%;
-            
-        }
+        display: flex;
+        align-items: flex-start;
         
+        @media (min-width: $desktop-viewport-width) {
+            align-items: center; 
+        }  
     }
 
     .about-contact-container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 6%;
-        padding-right: 6%;
-        
+        gap: 30px;
+
         @media (min-width: $desktop-viewport-width) {
             flex-direction: reverse;
-            justify-content: space-between;
-            
         }
 
         .button-container{
@@ -45,49 +38,30 @@
             flex-direction: column;
             gap: 20px;
             
+
             @media (min-width: $desktop-viewport-width) {
                 flex-direction: row;
-                gap: 20px;
                 order: 2;
-            }
-    
-            .button-logo {
-                width: 300px;
-                margin-bottom: 16px;
-                width: 180px;
-                height: 52px;   
             }
         }
     
         .contact-title {
-            @include h3();
-            padding-top: 4%;
-            font-weight: 200;
-            line-height: 35px;
+            @include h1;
             letter-spacing: 1.25px;
-            text-align: left;
-            padding-bottom: 2%;
-                
             @media (min-width: $desktop-viewport-width) {
-                letter-spacing: 2.14px;
-                font-size: 30px;
+                letter-spacing: 2.15px;
                 order: 0;
 
             }
         }
               
         .contact-text {
-            @include input-text();
+            @include input-text;
             letter-spacing: 2px;
-            text-align: left;
-            padding-bottom: 5%;
             font-size: 18px;
-            max-width: 331px;
-        
-            @media (min-width: $desktop-viewport-width) {
-                font-size: 18px;
-                order: 1;
             
+            @media (min-width: $desktop-viewport-width) {
+                order: 1;
             }
         }
     }      

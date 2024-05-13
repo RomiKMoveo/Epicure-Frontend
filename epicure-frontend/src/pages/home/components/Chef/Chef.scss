@@ -2,7 +2,9 @@
 @import "../../../../data/variables.scss";
 
 .chef {
-    @include desktop-padding();
-
+    @include desktop-margin;
+    display: flex;
+    flex-direction:column;
+   
               
 }
