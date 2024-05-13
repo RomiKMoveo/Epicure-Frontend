@@ -1,16 +1,96 @@
 @import "../../../../data/types/typography.scss";
 @import "../../../../data/variables.scss";
 
-.homePage {
+.about {
+    @include desktop-padding();
+    background-color: $secondary-color-offWite;
     display: flex;
-    //flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+
 
     @media (min-width: $desktop-viewport-width) {
-        padding-left: 127px;
-        padding-right: 115px;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
     }
 
+    .epicure-logo-container {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-left: 6%;
+          
+        @media (min-width: $desktop-viewport-width) {
+            margin-left: 5%;
+            
+        }
+        
+    }
+
+    .about-contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 6%;
+        padding-right: 6%;
+        
+        @media (min-width: $desktop-viewport-width) {
+            flex-direction: reverse;
+            justify-content: space-between;
+            
+        }
+
+        .button-container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+            @media (min-width: $desktop-viewport-width) {
+                flex-direction: row;
+                gap: 20px;
+                order: 2;
+            }
+    
+            .button-logo {
+                width: 300px;
+                margin-bottom: 16px;
+                width: 180px;
+                height: 52px;   
+            }
+        }
+    
+        .contact-title {
+            @include h3();
+            padding-top: 4%;
+            font-weight: 200;
+            line-height: 35px;
+            letter-spacing: 1.25px;
+            text-align: left;
+            padding-bottom: 2%;
+                
+            @media (min-width: $desktop-viewport-width) {
+                letter-spacing: 2.14px;
+                font-size: 30px;
+                order: 0;
+
+            }
+        }
               
+        .contact-text {
+            @include input-text();
+            letter-spacing: 2px;
+            text-align: left;
+            padding-bottom: 5%;
+            font-size: 18px;
+            max-width: 331px;
+        
+            @media (min-width: $desktop-viewport-width) {
+                font-size: 18px;
+                order: 1;
+            
+            }
+        }
+    }      
 }
+
+    

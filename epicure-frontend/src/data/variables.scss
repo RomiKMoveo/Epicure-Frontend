@@ -1,1 +1,13 @@
 $desktop-viewport-width: 900px;
+
+@mixin desktop-padding() {
+    padding-left: 20px;
+    padding-right: 20px; 
+    width: 100%;
+    
+    @media (min-width: $desktop-viewport-width) {
+        padding-left: 127px;
+        padding-right: 115px;
+        width: 100%;
+    }
+}
