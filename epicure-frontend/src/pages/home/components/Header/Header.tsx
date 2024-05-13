@@ -2,13 +2,13 @@ import "./Header.scss";
 
 
 
-const HomePage: React.FC = () => {
+const Header: React.FC = () => {
 
   return (
     <>
-      <div>Header</div>
+      <div className="header">Header</div>
     </>
   );
 };
 
-export default HomePage;
+export default Header;

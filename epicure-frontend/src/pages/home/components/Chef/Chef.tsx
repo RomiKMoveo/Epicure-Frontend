@@ -6,7 +6,7 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <div>Chef</div>
+      <div className="chef">Chef</div>
     </>
   );
 };

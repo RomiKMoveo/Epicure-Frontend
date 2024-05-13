@@ -1,16 +1,7 @@
 @import "../../../../data/types/typography.scss";
 @import "../../../../data/variables.scss";
 
-.homePage {
-    display: flex;
-    //flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    @media (min-width: $desktop-viewport-width) {
-        padding-left: 127px;
-        padding-right: 115px;
-    }
-
+.header {
+    @include desktop-padding();
               
 }

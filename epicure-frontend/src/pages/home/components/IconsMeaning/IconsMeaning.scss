@@ -4,6 +4,7 @@
 
 .icons-meaning-container {
     background-color: $secondary-color-offWite;
+    @include desktop-padding();
     display: flex;
     flex-direction: column;
     align-items: center;
