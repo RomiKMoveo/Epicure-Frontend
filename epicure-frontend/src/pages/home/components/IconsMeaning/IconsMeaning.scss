@@ -3,11 +3,12 @@
 @import "../../../../data/UI/colors.scss";
 
 .icons-meaning-container {
+    @include desktop-padding;
     background-color: $secondary-color-offWite;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4%;
+    gap: 40px;
 
     @media (min-width: $desktop-viewport-width) {
         gap: 32px;
@@ -23,12 +24,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline-start: 0px;
-    column-gap: 40px;
+    gap: 40px;
 
     @media (min-width: $desktop-viewport-width) {
         flex-direction: row;
-        row-gap: 40px;
     }
   }  
     

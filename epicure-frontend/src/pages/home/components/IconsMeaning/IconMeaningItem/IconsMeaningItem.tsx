@@ -10,10 +10,10 @@ interface IconMeaningItemInterface {
 
 const IconMeaningItem: React.FC<IconMeaningItemInterface> = ({ icon, alt, caption }) => {
   return (
-    <figure className="icon-meaning-item">
-      <img src={icon} alt={alt} className="icon-img" />
-      <figcaption className="icon-caption">{caption}</figcaption>
-    </figure>
+      <figure className="icon-meaning-item">
+        <img src={icon} alt={alt} className="icon-img" />
+        <figcaption className="icon-caption">{caption}</figcaption>
+      </figure>
   );
 };
 

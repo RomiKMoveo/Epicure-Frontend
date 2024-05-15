@@ -13,18 +13,15 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <div className="homePage">
- 
-        <div className="App">
-            <Header />
-            <Hero />
-            <h1>popular restaurant in epicure:</h1>
-            <h1>Signature Dish Of:</h1>
-            <IconsMeaning />
-            <Chef />
-            <About />
-            <Footer />
-        </div>
+      <div className="home-page">
+        <Header />
+        <Hero />
+        <h1>popular restaurant in epicure:</h1>
+        <h1>Signature Dish Of:</h1>
+        <IconsMeaning />
+        <Chef />
+        <About />
+        <Footer />
       </div>      
     </>
   );

@@ -1,16 +1,70 @@
 @import "../../../../data/types/typography.scss";
 @import "../../../../data/variables.scss";
 
-.homePage {
+.about {
+    @include desktop-padding;
+    background-color: $secondary-color-offWite;
     display: flex;
-    //flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    flex-direction: column;
+    gap: 32px;
 
     @media (min-width: $desktop-viewport-width) {
-        padding-left: 127px;
-        padding-right: 115px;
+        flex-direction: row-reverse;
+        align-items: center;  
+        gap: 85px;
     }
 
+    .epicure-logo-container {
+        display: flex;
+        align-items: flex-start;
+        
+        @media (min-width: $desktop-viewport-width) {
+            align-items: center; 
+        }  
+    }
+
+    .about-contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+
+        @media (min-width: $desktop-viewport-width) {
+            flex-direction: reverse;
+        }
+
+        .button-container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+
+            @media (min-width: $desktop-viewport-width) {
+                flex-direction: row;
+                order: 2;
+            }
+        }
+    
+        .contact-title {
+            @include h1;
+            letter-spacing: 1.25px;
+            @media (min-width: $desktop-viewport-width) {
+                letter-spacing: 2.15px;
+                order: 0;
+
+            }
+        }
               
+        .contact-text {
+            @include input-text;
+            letter-spacing: 2px;
+            font-size: 18px;
+            
+            @media (min-width: $desktop-viewport-width) {
+                order: 1;
+            }
+        }
+    }      
 }
+
+    

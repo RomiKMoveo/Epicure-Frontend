@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-h1 {
+@mixin h1 {
     @include font-style();
     font-weight: 200;
     font-style: normal;
@@ -18,7 +18,7 @@ h1 {
     }
 }
 
-@mixin h2() {
+@mixin h2 {
     @include font-style();
     font-weight: 200;
     font-style: normal;
@@ -31,7 +31,7 @@ h1 {
     }
 }
 
-h3 {
+@mixin h3 {
     @include font-style();
     font-weight: 400;
     font-style: normal;
@@ -43,7 +43,7 @@ h3 {
     }
 }
 
-.body-text {
+@mixin body-text {
     @include font-style();
     font-weight: 200;
     font-style: normal;
@@ -51,7 +51,7 @@ h3 {
     color: $primary-color-black;
 }
 
-@mixin button {
+@mixin button() {
     @include font-style();
     font-weight: 200;
     font-style: normal;
@@ -59,7 +59,7 @@ h3 {
     color: $primary-color-white;
 }
 
-@mixin input-text {
+@mixin input-text() {
     @include font-style();
     font-weight: 200;
     font-style: normal;

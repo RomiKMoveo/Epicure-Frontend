@@ -2,12 +2,12 @@ import "./Hero.scss";
 
 
 
-const HomePage: React.FC = () => {
+const Hero: React.FC = () => {
 
   return (
     <>
       <div>
-        <h1>Hero</h1>
+        <h1 className="hero">Hero</h1>
  
       </div>
       
@@ -15,4 +15,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default Hero;
