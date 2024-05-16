@@ -4,20 +4,29 @@
 .search-bar {
   display: flex;
   align-items: center;
-  border-radius: 0.4vw;
-  border: 0.5px solid $primary-color-black; 
-  height: 30px;
-  width: 30%;
-  gap: 20px;
+  border-radius: 1.0vw;
+  border: 0.5px solid $primary-color-black;
+  width: 100%;
+  padding: 6px 12px;
   text-align: center;
+  box-sizing: inherit;
 
-  input {
-      @include input-text;
-      font-size: 12px;
-      letter-spacing: 1.3px;
-      border: none;
-      background-color: var(--transparent-color);
-      width: 100%;
+ 
+
+    input {
+        @include input-text;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 1.3px;
+        border: none;
+        background-color: var(--transparent-color);
+        width: 100%; 
+        
+        
+        @media (min-width: $desktop-viewport-width) {
+          font-size: 24px;  
+        }
+    
   }
 
   button {
@@ -25,10 +34,5 @@
     background-color: var(--transparent-color);
     padding: 0;
     cursor: pointer;
-      
-      img {
-          width: 100%;
-          height: 100%;
-      }
   }
 }

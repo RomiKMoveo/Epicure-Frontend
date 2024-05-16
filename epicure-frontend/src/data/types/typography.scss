@@ -1,15 +1,14 @@
 @import "../variables.scss";
 @import "../UI/colors.scss";
 
-@mixin font-style() {
+@mixin font-style {
     font-family: "Helvetica Neue";
     font-style: normal;
 }
 
 @mixin h1 {
-    @include font-style();
+    @include font-style;
     font-weight: 200;
-    font-style: normal;
     font-size: 24px;
     color: $primary-color-black;
 
@@ -19,9 +18,8 @@
 }
 
 @mixin h2 {
-    @include font-style();
+    @include font-style;
     font-weight: 200;
-    font-style: normal;
     font-size: 16px;
     color: $primary-color-black;
 
@@ -32,9 +30,8 @@
 }
 
 @mixin h3 {
-    @include font-style();
+    @include font-style;
     font-weight: 400;
-    font-style: normal;
     font-size: 18px;
     color: $primary-color-black;
 
@@ -44,34 +41,30 @@
 }
 
 @mixin body-text {
-    @include font-style();
+    @include font-style;
     font-weight: 200;
-    font-style: normal;
     font-size: 16px;
     color: $primary-color-black;
 }
 
 @mixin button() {
-    @include font-style();
+    @include font-style;
     font-weight: 200;
-    font-style: normal;
     font-size: 16px;
     color: $primary-color-white;
 }
 
 @mixin input-text() {
-    @include font-style();
+    @include font-style;
     font-weight: 200;
-    font-style: normal;
     font-size: 16px;
     color: $primary-color-black;
 }
 
 
 .Label-text {
-    @include font-style();
+    @include font-style;
     font-weight: 200;
-    font-style: normal;
     font-size: 14px;
     color: $primary-color-gray;
 }
