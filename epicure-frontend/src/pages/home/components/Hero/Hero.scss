@@ -7,9 +7,8 @@
 
     .hero-background {
         background-image: url(../../../../assets/images/hero-background-picture.svg);
-        position: relative;
         background-size: cover;
-        height: 73vw;
+        height: 695px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -18,8 +17,7 @@
     }
     
     .overlay {
-        position: relative;
-        width: 80vw;
+        max-width: 400px;
         height: 39vw;
         background: rgba($primary-color-white, 0.88);
         display: flex;
