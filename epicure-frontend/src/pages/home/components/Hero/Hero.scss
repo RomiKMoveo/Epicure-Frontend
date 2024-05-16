@@ -2,9 +2,45 @@
 @import "../../../../data/variables.scss";
 
 .hero {
-    @include desktop-margin;
-    display: flex;
-    flex-direction:column;
+  display: flex;
+  flex-direction: column;
 
-              
+  .hero-background {
+    background-image: url(../../../../assets/images/hero-background-picture.svg);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $desktop-viewport-width) {
+      height: 695px;
+    }
+  }
+
+  .overlay {
+    height: 220px;
+    background: rgba($primary-color-white, 0.88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 85px 20px;
+    padding: 0 10px;
+    @media (min-width: $desktop-viewport-width) {
+      padding: 36px 126px;
+      width: 775px;
+    }
+  }
+
+  .overlay-text {
+    @include h1;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 32px;
+    @media (min-width: $desktop-viewport-width) {
+      min-width: 440px;
+      line-height: 40px;
+    }
+  }
 }
