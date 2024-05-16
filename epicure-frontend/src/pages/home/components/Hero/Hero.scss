@@ -2,9 +2,38 @@
 @import "../../../../data/variables.scss";
 
 .hero {
-    @include desktop-margin;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 
-              
+    .hero-background {
+        background-image: url(../../../../assets/images/hero-background-picture.svg);
+        position: relative;
+        background-size: cover;
+        height: 73vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position-x:73.7%;
+    }
+    
+    .overlay {
+        position: relative;
+        width: 80vw;
+        height: 39vw;
+        background: rgba($primary-color-white, 0.88);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+    }
+    
+    .overlay-text {
+        @include h1; 
+        text-align: center;
+        font-size: 6.4vw;
+        letter-spacing: 0.5vw;
+    }
+    
 }
