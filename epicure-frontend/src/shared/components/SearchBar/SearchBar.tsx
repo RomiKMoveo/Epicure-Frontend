@@ -10,7 +10,7 @@ const SearchBar: React.FC<{ mobileNav?: boolean }> = ({ mobileNav }) => {
           <button>
               <img src={SearchIcon} alt='search icon'/>
           </button>
-          <input type='text' placeholder="Search for restaurantcuisine, chef"/>
+          <input type='text' placeholder="Search for restaurant cuisine, chef"/>
       </div>
     </>
   );
