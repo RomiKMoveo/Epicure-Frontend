@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.scss";
+import { ButtonInterface } from "./Button.type";
 
 // const Button: React.FC<ButtonInterface> = ({
 //   icon,
@@ -29,18 +30,7 @@ import "./Button.scss";
 //   onClick?: () => void;
 // }
 
-interface ButtonInterface {
-  children: React.ReactNode;
-  text?: string;
-  height?: string;
-  width?: string;
-  icon?: string;
-  color?: string;
-  backGroundColor?: string;
-  type?: "button" | "submit" | "reset";
-  disabled?: boolean
-  onClick?: () => void;
-}
+
 
 const Button: React.FC<ButtonInterface> = ({
   children,

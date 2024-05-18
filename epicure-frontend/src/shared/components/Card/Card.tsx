@@ -1,18 +1,8 @@
 import React from "react";
 import "./Card.scss";
 import { starImageArray } from "./starRating";
+import { CardInterface } from "./Card.type";
 
-interface CardInterface {
-  image: string;
-  title: string;
-  chefName?: string;
-  restaurantName?: string;
-  ingredients?: string;
-  price?: number;
-  stars?: number;
-  icon?: string;
-  type:string
-}
 
 const Card: React.FC <CardInterface> = ({
   image,

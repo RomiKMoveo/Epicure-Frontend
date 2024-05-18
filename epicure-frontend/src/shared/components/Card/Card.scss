@@ -118,6 +118,7 @@
             display: none;
             
             @media (min-width: $desktop-viewport-width) { 
+                display: block;
             }
         }
     }
