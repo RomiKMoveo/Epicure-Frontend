@@ -1,7 +1,7 @@
 @import "../../../../data/types/typography.scss";
 @import "../../../../data/variables.scss";
 
-.chef {
+.chef-container {
     @include desktop-margin;
     display: flex;
     flex-direction:column;
@@ -19,6 +19,13 @@
             font-size: 30px;
             text-align: center;
         }
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 0px;
     }
 
               

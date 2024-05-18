@@ -1,0 +1,203 @@
+@import "../../../data/types/typography.scss", "../../../data/variables.scss", "../../../data/UI/colors.scss";
+
+// .card {
+//     &.chef
+// }
+.chef{
+    height: $card-moblie-height;
+    width: $card-moblie-width;
+    background-color: $secondary-color-pearl;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    
+    @media (min-width: $desktop-viewport-width) {
+        height: $card-chef-desktop-height;
+        width: $card-chef-desktop-width;
+    }
+
+    .image {
+        width: $card-moblie-width;
+        
+        @media (min-width: $desktop-viewport-width) {
+            width: $card-chef-desktop-width;
+        }
+
+    }
+
+    .title{
+        @include h3;
+        font-size: 18px;
+        line-height: 21.47px;
+        letter-spacing: 2.7px;
+        text-align: left;
+        flex-direction: column;
+        padding: 0px 16px;
+        padding-bottom: 16px;
+        padding-top: 5px;
+        height: 100%;
+
+        @media (min-width: $desktop-viewport-width) {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 30px;
+        }
+
+    }
+}
+
+
+
+.restaurant {
+    height: $card-moblie-height;
+    width: $card-moblie-width;
+    background-color: $secondary-color-pearl;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    
+    @media (min-width: $desktop-viewport-width) {
+        width: $card-desktop-width;
+        height: $card-restaurant-desktop-height;
+    }
+
+    .image {
+        width: $card-moblie-width;
+
+        @media (min-width: $desktop-viewport-width) {
+            width: $card-desktop-width;
+            
+        }
+    }
+
+    .title{
+        @include h3;
+        font-size: 18px;
+        line-height: 21.47px;
+        letter-spacing: 2.7px;
+        text-align: left;
+        flex-direction: column;
+        padding: 0px 16px;
+        padding-bottom: 16px;
+        padding-top: 5px;
+        height: 100%;
+
+
+        @media (min-width: $desktop-viewport-width) {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 30px;
+        }
+
+    }
+    .card-info {
+        @include h1;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0px 16px;
+        padding-bottom: 16px;
+        padding-top: 5px;
+        height: 100%;
+
+        @media (min-width: $desktop-viewport-width) {
+            align-items: center;
+        }
+
+        .chef-name {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 2px;
+
+            @media (min-width: $desktop-viewport-width) {
+                margin-bottom: 8px;
+            }
+        }
+        
+        .stars {
+            display: none;
+            
+            @media (min-width: $desktop-viewport-width) { 
+            }
+        }
+    }
+}
+
+.dish {
+    height: $card-dish-moblie-height;
+    width: $card-moblie-width;
+    background-color: $secondary-color-pearl;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    
+    @media (min-width: $desktop-viewport-width) {
+        width: $card-desktop-width;
+        height: $card-dish-desktop-height;
+        
+    }
+
+    .image {
+        width: $card-moblie-width;
+
+        @media (min-width: $desktop-viewport-width) {
+            width: $card-desktop-width;
+            
+        }
+    }
+
+    .title{
+        @include h3;
+        font-size: 18px;
+        line-height: 21.47px;
+        letter-spacing: 2.7px;
+        text-align: left;
+        flex-direction: column;
+        padding: 0px 16px;
+        padding-bottom: 16px;
+        padding-top: 5px;
+        height: 100%;
+
+
+        @media (min-width: $desktop-viewport-width) {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 30px;
+        }
+
+    }
+    .card-info {
+        @include h1;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0px 16px;
+        padding-bottom: 16px;
+        padding-top: 5px;
+        height: 100%;
+
+        @media (min-width: $desktop-viewport-width) {
+            align-items: center;
+        }
+    }
+    .ingredients {
+        flex-grow: 1; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        @media (min-width: $desktop-viewport-width) {
+            align-items: center;
+        }
+    }
+
+    .price {
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+}
+            
+
+        
