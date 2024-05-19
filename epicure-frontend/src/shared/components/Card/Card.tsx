@@ -27,11 +27,12 @@ const Card: React.FC <CardInterface> = ({
           <div className="stars">
             {stars && <img src={starImageArray[stars]} className="stars" alt='stars-rating' />}
           </div>
-          <div>{ingredients && <span className="ingredients">{ingredients}</span>}</div>
-          
-            <div className="icon-conteiner">
-            {icon && <img src={IconsArray[icon]} alt='Icon name' />}
+          {icon && 
+            <div className="icon-container">
+            <img src={IconsArray[icon]} alt='Icon name' />
             </div>
+            }
+          <div>{ingredients && <span className="ingredients">{ingredients}</span>}</div>
           
           {price &&
             <div className='price'>
