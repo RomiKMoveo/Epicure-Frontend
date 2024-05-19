@@ -1,5 +1,5 @@
 import "./Chef.scss";
-import allCardsIcon from "../../../../assets/icons/all-cards-icon.svg";
+import allCardsIcon from "../../../../assets/icons/all-resturant-icon.svg";
 import Button from "../../../../shared/components/Button/Button";
 import Card from "../../../../shared/components/Card/Card";
 import onzaImage from "../../../../assets/images/onza.svg";

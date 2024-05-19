@@ -1,8 +1,5 @@
 @import "../../../data/types/typography.scss", "../../../data/variables.scss", "../../../data/UI/colors.scss";
 
-// .card {
-//     &.chef
-// }
 .chef{
     height: $card-moblie-height;
     width: $card-moblie-width;
@@ -47,8 +44,6 @@
     }
 }
 
-
-
 .restaurant {
     height: $card-moblie-height;
     width: $card-moblie-width;
@@ -91,7 +86,7 @@
         }
 
     }
-    .card-info {
+    .card-body {
         @include h1;
         display: flex;
         flex-direction: column;
@@ -150,55 +145,131 @@
 
     .title{
         @include h3;
-        font-size: 18px;
-        line-height: 21.47px;
-        letter-spacing: 2.7px;
+        line-height: 22px;
+        letter-spacing: 3px;
         text-align: left;
         flex-direction: column;
         padding: 0px 16px;
-        padding-bottom: 16px;
         padding-top: 5px;
         height: 100%;
 
 
         @media (min-width: $desktop-viewport-width) {
             text-align: center;
-            padding-top: 20px;
-            font-size: 30px;
+            padding-top: 2px;
+            letter-spacing: 4px;
+            font-size: 40px;
+            line-height: 47px;
         }
 
     }
-    .card-info {
-        @include h1;
+    .card-body {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         text-align: left;
         padding: 0px 16px;
         padding-bottom: 16px;
         padding-top: 5px;
         height: 100%;
-
+        gap: 15px;
+        flex-grow: 1;
+   
         @media (min-width: $desktop-viewport-width) {
             align-items: center;
         }
-    }
-    .ingredients {
-        flex-grow: 1; 
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
 
-        @media (min-width: $desktop-viewport-width) {
-            align-items: center;
+        .icon-conteiner {
+            display: none;
+            flex-direction: row;
+            
+            
+            img {
+                width: 30px;
+                height: 22px;
+    
+                @media (min-width: $desktop-viewport-width) {
+                    width: 40px;
+                    height: 30px;
+    
+                }
+            }
         }
-    }
 
-    .price {
-        margin-bottom: 0px;
-        margin-top: 5px;
+        .ingredients {
+            @include body-text;
+            flex-grow: 1; 
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            line-height: 20px;
+            letter-spacing: 2px;
+    
+    
+    
+            @media (min-width: $desktop-viewport-width) {
+                text-align: center;
+                font-size: 24px;
+                font-family: Helvetica Neue;
+                line-height: 30px;
+             
+    
+    
+            }
+        } 
+    
+        .price {
+            @media (min-width: $desktop-viewport-width) {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;      
+            }
+    
+    
+            hr {
+                display: none;
+    
+                @media (min-width: $desktop-viewport-width) {
+                    display: inline;
+                    border-top: 1px solid $primary-color-gray;
+                    width: 100px;
+                    margin-left: 2px;
+                    margin-right: 2px;
+                
+                }
+            }
+            .nis-icon {
+                width: 7.26px;
+                height: 6.67px;
+                border: none;
+    
+                @media (min-width: $desktop-viewport-width) {
+                    width: 12.54px;
+                    height: 11.52px;
+                }
+            }
+    
+            .price-value {
+                @include h1;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 2px;
+                font-weight: 400;
+                font-size: 16px;
+                margin-left: 4px;
+                text-align: center;
+    
+                @media (min-width: $desktop-viewport-width) {
+                    font-size: 24px;
+                    font-weight: 200;
+                    line-height: 30px;
+                    
+                }
+            }
+        }   
     }
-
+    
 }
             
 
