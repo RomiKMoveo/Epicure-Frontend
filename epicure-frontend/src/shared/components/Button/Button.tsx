@@ -2,36 +2,6 @@ import React from "react";
 import "./Button.scss";
 import { ButtonInterface } from "./Button.type";
 
-// const Button: React.FC<ButtonInterface> = ({
-//   icon,
-//   title,
-//   customStyle,
-//   disabled = false,
-//   onClick,
-// }) => {
-//   const iconClass = icon ? "icon-btn" : "";
-//   const disabledBtn = disabled ? "disabled" : "";
-//   return (
-//     <button
-//       // type={type}
-//       disabled={disabled}
-//       className={`click-btn ${disabledBtn} ${iconClass}`}
-//       onClick={onClick}
-//     >
-//       <div className="icon-container" style={{ ...customStyle }}>
-//         {icon && <img src={icon} alt="icon" className="icon" />}
-// export interface ButtonInterface {
-//   title: string;
-//   icon?: string;
-//   color?: string;
-//   backGroundColor?: string;
-//   customStyle?: CSSProperties;
-//   disabled?: boolean;
-//   onClick?: () => void;
-// }
-
-
-
 const Button: React.FC<ButtonInterface> = ({
   height,
   icon,
