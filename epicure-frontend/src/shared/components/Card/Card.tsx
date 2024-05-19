@@ -5,7 +5,7 @@ import { CardInterface } from "./Card.type";
 import nisIcon from "../../../assets/icons/nis-icon.svg";
 import IconsArray from "./iconsArray";
 
-const Card: React.FC <CardInterface> = ({
+const Card: React.FC<CardInterface> = ({
   image,
   title,
   chefName,
@@ -17,31 +17,32 @@ const Card: React.FC <CardInterface> = ({
   type
 }) => {
   return (
-    <div className={`${type}`}>
+    <div className={`card ${type}`}>
       <figure>
-        <img src={image} alt={title} className="image" />
-        <figcaption className="title">{title}</figcaption>
+        <img src={image} alt={title} className={`card-image ${type}`}/>
+        <figcaption className={`card-title ${type}`}>{title}</figcaption>
       </figure>
-      <div className="card-body">
-          <div className="chef-name">{chefName}</div>
-          <div className="stars">
-            {stars && <img src={starImageArray[stars]} className="stars" alt='stars-rating' />}
+      <div className={`card-body ${type}`}>
+        <div className={`chef-name ${type}`}>{chefName}</div>
+          {stars && 
+           <div className={`stars-rating ${type}`}>
+            <img src={starImageArray[stars]} alt="stars-rating" />
           </div>
-          {icon && 
-            <div className="icon-container">
-            <img src={IconsArray[icon]} alt='Icon name' />
-            </div>
-            }
-          <div>{ingredients && <span className="ingredients">{ingredients}</span>}</div>
-          
-          {price &&
-            <div className='price'>
-              <hr></hr>
-                <img src={nisIcon} alt='ils' className='nis-icon'/>
-                <span className='price-value'>{price} </span>
-              <hr></hr>
-            </div>
-          }
+        }
+        {icon &&
+          <div className={`icon-container ${type}`}>
+            <img src={IconsArray[icon]} alt="Icon name" />
+          </div>
+        }
+        <div>{ingredients && <span className={`ingredients ${type}`}>{ingredients}</span>}</div>
+        {price &&
+          <div className={`price ${type}`}>
+            <hr />
+            <img src={nisIcon} alt="ils" className={`nis-icon ${type}`} />
+            <span className={`price-value ${type}`}>{price} </span>
+            <hr />
+          </div>
+        }
       </div>
     </div>
   );

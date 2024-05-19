@@ -1,284 +1,207 @@
 @import "../../../data/types/typography.scss", "../../../data/variables.scss", "../../../data/UI/colors.scss";
-
-.chef{
-    height: $card-moblie-height;
-    width: $card-moblie-width;
+.card {
+    width: $card-moblie-width; 
     background-color: $secondary-color-pearl;
     display: flex;
     flex-direction: column;
     margin: 20px 0;
-    
-    @media (min-width: $desktop-viewport-width) {
-        height: $card-chef-desktop-height;
-        width: $card-chef-desktop-width;
-    }
 
-    .image {
-        width: $card-moblie-width;
-        
+    &.chef {
+        height: $card-moblie-height;
         @media (min-width: $desktop-viewport-width) {
+            height: $card-chef-desktop-height;
             width: $card-chef-desktop-width;
-     
         }
-
     }
 
-    .title{
-        @include h3;
-        font-size: 18px;
-        line-height: 21.47px;
-        letter-spacing: 2.7px;
-        text-align: left;
-        flex-direction: column;
-        padding: 0px 16px;
-        padding-bottom: 16px;
-        padding-top: 5px;
-        height: 100%;
-
-        @media (min-width: $desktop-viewport-width) {
-            text-align: center;
-            padding-top: 30px;
-            font-size: 30px;
-        }
-
-    }
-}
-
-.restaurant {
-    height: $card-moblie-height;
-    width: $card-moblie-width;
-    background-color: $secondary-color-pearl;
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    
-    @media (min-width: $desktop-viewport-width) {
-        width: $card-desktop-width;
-        height: $card-restaurant-desktop-height;
-    }
-
-    .image {
-        width: $card-moblie-width;
+    &.restaurant {
+        height: $card-moblie-height;
 
         @media (min-width: $desktop-viewport-width) {
             width: $card-desktop-width;
-            
+            height: $card-restaurant-desktop-height;
+        }
+    }
+    
+    &.dish {
+        height: $card-dish-moblie-height;
+
+        @media (min-width: $desktop-viewport-width) {
+            width: $card-desktop-width;
+            height: $card-dish-desktop-height;
         }
     }
 
-    .title{
-        @include h3;
-        font-size: 18px;
-        line-height: 21.47px;
-        letter-spacing: 2.7px;
-        text-align: left;
-        flex-direction: column;
-        padding: 0px 16px;
-        padding-bottom: 16px;
-        padding-top: 5px;
-        height: 100%;
+    .card-image {
+        width: $card-moblie-width;
 
-
-        @media (min-width: $desktop-viewport-width) {
-            text-align: center;
-            padding-top: 20px;
-            font-size: 30px;
-        }
-
-    }
-    .card-body {
-        @include h1;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        padding: 0px 16px;
-        padding-bottom: 16px;
-        padding-top: 5px;
-        height: 100%;
-
-        @media (min-width: $desktop-viewport-width) {
-            align-items: center;
-        }
-
-        .chef-name {
-            font-size: 16px;
-            line-height: 20px;
-            letter-spacing: 2px;
-
+        &.chef {
             @media (min-width: $desktop-viewport-width) {
-                margin-bottom: 8px;
+                width: $card-chef-desktop-width;
             }
         }
-        
-        .stars {
-            display: none;
-            
-            @media (min-width: $desktop-viewport-width) { 
-                display: block;
+
+        &.restaurant{
+            @media (min-width: $desktop-viewport-width) {
+                width: $card-desktop-width;   
+            }
+        }
+
+        &.dish {
+            @media (min-width: $desktop-viewport-width) {
+                width: $card-desktop-width;   
             }
         }
     }
-}
 
-.dish {
-    height: $card-dish-moblie-height;
-    width: $card-moblie-width;
-    background-color: $secondary-color-pearl;
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    
-    @media (min-width: $desktop-viewport-width) {
-        width: $card-desktop-width;
-        height: $card-dish-desktop-height;
-        
-    }
-
-    .image {
-        width: $card-moblie-width;
-
-        @media (min-width: $desktop-viewport-width) {
-            width: $card-desktop-width;
-            
-        }
-    }
-
-    .title{
+    .card-title{
         @include h3;
         line-height: 22px;
         letter-spacing: 3px;
         text-align: left;
         flex-direction: column;
-        padding: 0px 16px;
-        padding-top: 5px;
-        height: 100%;
-
 
         @media (min-width: $desktop-viewport-width) {
             text-align: center;
-            padding-top: 2px;
             letter-spacing: 4px;
-            font-size: 40px;
             line-height: 47px;
+            padding-top: 20px;
+        }
+        
+        &.chef {
+            @media (min-width: $desktop-viewport-width) {
+                font-size: 30px;
+            }
+        }
+        &.dish {
+            padding-top: 20px;
+            @media (min-width: $desktop-viewport-width) {
+                padding-left: 100px;
+                padding-right: 100px;
+                  
+            } 
         }
 
+
     }
+
     .card-body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
-        padding: 0px 16px;
-        padding-bottom: 16px;
-        padding-top: 5px;
-        height: 100%;
-        gap: 15px;
+        padding: 5px 16px 16px;
+        gap: 10px;
         flex-grow: 1;
-   
+        justify-content: space-between;
+
         @media (min-width: $desktop-viewport-width) {
-            align-items: center;
-            flex-direction: column;
+            align-items: center;   
+          
         }
-
-        .icon-container {
-            order: 1;
-            @media (min-width: $desktop-viewport-width) {
-                order: 0;
-            }
-            
-            img {
-                width: 36px;
-                height: 23px;
-    
-                @media (min-width: $desktop-viewport-width) {
-                    width: 40px;
-                    height: 30px;
-                 
-    
-                }
-            }
-        }
-
-        .ingredients {
-            @include body-text;
-            flex-grow: 1; 
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            line-height: 20px;
-            letter-spacing: 2px;
-            order: 0;
-    
-    
-    
-            @media (min-width: $desktop-viewport-width) {
-                text-align: center;
-                font-size: 24px;
-                font-family: Helvetica Neue;
-                line-height: 30px;
-                order: 1;
-             
-    
-    
-            }
-        } 
-    
-        .price {
-            order: 2;  
-            @media (min-width: $desktop-viewport-width) {
-                display: flex;
-                justify-content: center;
-                flex-direction: row;
-                align-items: center; 
-                  
-            }
-    
-    
-            hr {
-                display: none;
-    
-                @media (min-width: $desktop-viewport-width) {
-                    display: inline;
-                    border-top: 1px solid $primary-color-gray;
-                    width: 100px;
-                    margin-left: 2px;
-                    margin-right: 2px;
-                
-                }
-            }
-            .nis-icon {
-                width: 7.26px;
-                height: 6.67px;
-                border: none;
-    
-                @media (min-width: $desktop-viewport-width) {
-                    width: 12.54px;
-                    height: 11.52px;
-                }
-            }
-    
-            .price-value {
-                @include h1;
-                font-size: 16px;
-                line-height: 19px;
-                letter-spacing: 2px;
-                font-weight: 400;
-                font-size: 16px;
-                margin-left: 4px;
-                text-align: center;
-    
-                @media (min-width: $desktop-viewport-width) {
-                    font-size: 24px;
-                    font-weight: 200;
-                    line-height: 30px;
-                    
-                }
-            }
-        } 
-    
-
-    }   
-}
-            
-
         
+        &.restaurant {
+            .chef-name {
+                @include body-text;
+                line-height: 20px;
+                letter-spacing: 2px;
+            }
+            
+            .stars-rating {
+                display: none;
+                @media (min-width: $desktop-viewport-width) { 
+                    display: block;
+                }
+            }
+        }
+        &.dish {
+            .icon-container {
+                order: 1;
+                @media (min-width: $desktop-viewport-width) {
+                    order: 0;
+                }
+                
+                img {
+                    width: 36px;
+                    height: 23px;
+                    @media (min-width: $desktop-viewport-width) {
+                        width: 40px;
+                        height: 30px;
+                    }
+                }
+            }
+
+            .ingredients {
+                @include body-text;
+                flex-grow: 1; 
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                line-height: 20px;
+                letter-spacing: 2px;
+                order: 0;
+        
+        
+        
+                @media (min-width: $desktop-viewport-width) {
+                    text-align: center;
+                    font-size: 24px;
+                    font-family: Helvetica Neue;
+                    line-height: 30px;
+                    order: 1;
+                
+        
+        
+                }
+            } 
+        
+            .price {
+                order: 2;
+                display: flex;
+                @media (min-width: $desktop-viewport-width) {
+                    justify-content: center;
+                    align-items: center;   
+                }
+        
+                hr {
+                    display: none;
+                    @media (min-width: $desktop-viewport-width) {
+                        display: inline;
+                        border-top: 1px solid $primary-color-gray;
+                        width: 100px;
+                        margin-left: 2px;
+                        margin-right: 2px;
+                    
+                    }
+                }
+                .nis-icon {
+                    width: 7.26px;
+                    height: 6.67px;
+                    border: none;
+                    @media (min-width: $desktop-viewport-width) {
+                        width: 12.54px;
+                        height: 11.52px;
+                    }
+                }
+        
+                .price-value {
+                    @include h1;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 2px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin-left: 4px;
+                    text-align: center;
+        
+                    @media (min-width: $desktop-viewport-width) {
+                        font-size: 24px;
+                        font-weight: 200;
+                        line-height: 30px;
+                        
+                    }
+                }
+            } 
+        }
+    }
+}
