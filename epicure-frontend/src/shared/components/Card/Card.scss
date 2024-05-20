@@ -86,6 +86,8 @@
         }
         &.dish {
             @media (min-width: $desktop-viewport-width) {
+                margin-left: 60px;
+                margin-right: 60px;
             }
         }
 
@@ -153,8 +155,9 @@
                 @media (min-width: $desktop-viewport-width) {
                     text-align: center;
                     font-size: 24px;
-                    font-family: Helvetica Neue;
                     line-height: 30px;
+                    margin-left: 40px;
+                    margin-right: 40px;
                     order: 1;
                 
         
@@ -167,7 +170,8 @@
                 display: flex;
                 @media (min-width: $desktop-viewport-width) {
                     justify-content: center;
-                    align-items: center;   
+                    align-items: center; 
+                    padding-top: 10px;  
                 }
         
                 hr {
@@ -182,9 +186,6 @@
                     }
                 }
                 .nis-icon {
-                    width: 7.26px;
-                    height: 6.67px;
-                    border: none;
                     @media (min-width: $desktop-viewport-width) {
                         width: 12.54px;
                         height: 11.52px;
