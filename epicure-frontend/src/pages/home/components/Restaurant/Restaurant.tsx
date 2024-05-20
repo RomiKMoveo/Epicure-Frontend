@@ -31,6 +31,22 @@ const Restaurant: React.FC = () => {
       type: "restaurant",
       chefName: "Ran Shmueli",
       stars: 4,
+    },
+    {
+      id: "9",
+      image: claroImage,
+      title: "Claro",
+      type: "restaurant",
+      chefName: "Ran Shmueli",
+      stars: 4,
+    },
+    {
+      id: "10",
+      image: claroImage,
+      title: "Claro",
+      type: "restaurant",
+      chefName: "Ran Shmueli",
+      stars: 4,
     }],
     cardType: cardType.DISH,
   };

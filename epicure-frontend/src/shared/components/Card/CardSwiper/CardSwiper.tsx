@@ -1,19 +1,33 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
-import "swiper/scss/pagination";
-import "swiper/scss/navigation";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
-import "./CardSwiper.scss";
+import Card from '../Card';
 import { CardList } from './CardSwiper.type';
 import { CardInterface } from '../Card.type';
-import Card from '../Card';
-import CardSwipperConfig from "./CardSwipperConfig";
-
+import './CardSwiper.scss';
 
 const CardSwipper: React.FC<CardList> = ({ cards, cardType }) => {
   return (
     <div className="card-container">
-       <Swiper {...CardSwipperConfig(24)}> 
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={24}
+          slidesPerView={1.5}
+          navigation
+          breakpoints={{
+            900: {
+              autoplay: false,
+              slidesPerView: 3,
+              touchRatio: 1
+            }
+              
+           }}
+        >
 
         {cards.map((card: CardInterface) => (
           <SwiperSlide key={card.id}>

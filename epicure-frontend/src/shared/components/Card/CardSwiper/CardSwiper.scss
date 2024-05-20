@@ -1,21 +1,9 @@
-@import "../../../../data/variables.scss";
-
-.card-container {
-   
-
-    .swiper {
-        margin-left: unset;
-        display: flex;
-        overflow: hidden;
-        flex-shrink: unset;
-
-        .swiper-slide {
-            .dish-card {
-                .description-meaning-container {
-                    height: 171px;
-                }
-            }
-        }
-
-    }
+.swiper-slide {
+//     min-width: 24px; 
+//   @media (max-width: 899px) {
+//     .swiper-slide {
+//         min-width: 24px; 
+//     }
+//   }
 }
+  
