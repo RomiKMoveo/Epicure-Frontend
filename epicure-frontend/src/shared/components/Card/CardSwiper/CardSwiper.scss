@@ -1,6 +1,8 @@
+@import "../../../../data/variables.scss";
+
 .swiper-slide {
 //     min-width: 24px; 
-//   @media (max-width: 899px) {
+//    @media (min-width: $desktop-viewport-width) {
 //     .swiper-slide {
 //         min-width: 24px; 
 //     }

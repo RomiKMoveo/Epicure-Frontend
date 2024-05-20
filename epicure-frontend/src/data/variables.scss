@@ -41,5 +41,23 @@ $card-chef-desktop-height: 300px;
 $card-restaurant-desktop-height: 405px;
 $card-dish-desktop-height: 654px;
 
+//////
+/// 
+/// 
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$primary-color: #333;
+$secondary-color: #666;
+$accent-color: #ff6347;
 
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
 
+// Typography
+$heading-font-size: 2rem;
+$subheading-font-size: 1.5rem;
+$body-font-size: 1rem;
+
+// Spacing
+$base-spacing: 1rem;
+$large-spacing: 2rem;
+$small-spacing: 0.5rem;
