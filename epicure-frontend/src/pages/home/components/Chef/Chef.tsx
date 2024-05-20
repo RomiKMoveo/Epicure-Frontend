@@ -54,7 +54,7 @@ const Chef: React.FC = () => {
             </p>
         </div>
         <div className="chef-restaurants-container">
-          <div className="hef-restaurants-container-title">Yossi's Restaurans</div>
+          <div className="chef-restaurants-container-title">Yossi's Restaurans</div>
           <CardSwipper cards={chefData.cards} cardType={chefData.cardType}></CardSwipper>
           <Button text="All Restaurants" height="35px" icon={allCardsIcon} color="primary-color-black" backGroundColor=" var(--transparent-color)" onClick={handleClick} children={undefined} ></Button>
         </div>
