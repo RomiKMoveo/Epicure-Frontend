@@ -5,12 +5,16 @@
     display: flex;
     flex-direction: column;
     margin: 20px 0;
+    border-radius: 2px;
+  
 
     &.chef {
         height: $card-moblie-height;
+        
         @media (min-width: $desktop-viewport-width) {
             height: $card-chef-desktop-height;
             width: $card-chef-desktop-width;
+          
         }
     }
 
@@ -33,8 +37,9 @@
     }
 
     .card-image {
-        width: $card-moblie-width;
-
+        width: 100%;
+        object-fit: cover;
+        
         &.chef {
             @media (min-width: $desktop-viewport-width) {
                 width: $card-chef-desktop-width;
@@ -61,16 +66,17 @@
         display: flex;
         flex-direction: column;
         text-align: left;
-        padding: 5px 16px 16px;
-        gap: 10px;
+        padding: 16px 0px 0px 16px  ;
         flex-grow: 1;
-        justify-content: space-between;
-
+       
         @media (min-width: $desktop-viewport-width) {
             text-align: center;
+            align-items: center;
             letter-spacing: 4px;
             line-height: 47px;
             padding-top: 20px;
+        
+           
         }
         
         &.chef {
@@ -79,12 +85,8 @@
             }
         }
         &.dish {
-            padding-top: 20px;
             @media (min-width: $desktop-viewport-width) {
-                padding-left: 100px;
-                padding-right: 100px;
-                  
-            } 
+            }
         }
 
 
@@ -94,10 +96,9 @@
         display: flex;
         flex-direction: column;
         text-align: left;
-        padding: 5px 16px 16px;
-        gap: 10px;
+        padding: 10px 16px 16px;
+        gap: 16px;
         flex-grow: 1;
-        justify-content: space-between;
 
         @media (min-width: $desktop-viewport-width) {
             align-items: center;   
@@ -114,13 +115,15 @@
             .stars-rating {
                 display: none;
                 @media (min-width: $desktop-viewport-width) { 
-                    display: block;
+                    display: flex;
+                    align-items: center;
                 }
             }
         }
         &.dish {
             .icon-container {
                 order: 1;
+                gap: 10px;
                 @media (min-width: $desktop-viewport-width) {
                     order: 0;
                 }
