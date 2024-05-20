@@ -1,77 +1,115 @@
-@import "../../../../data/types/typography.scss";
-@import "../../../../data/variables.scss";
+@import "../../../../data/types/typography.scss", "../../../../data/variables.scss", "../../../../data/UI/colors.scss";
+
 
 .chef-container {
     @include desktop-margin;
-    display: flex;
-    flex-direction:column;
     margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $desktop-viewport-width) {
+        
+    }
     
     .chef-title {
+        padding-right: 20px; 
         @include h2;
         font-size: 18px;
         line-height: 35px;
         letter-spacing: 1.25px;
         text-align: left;
-        transition: var(--transition-time);
-
+        text-transform: uppercase;
+        padding-bottom: 20px;
         @media (min-width: $desktop-viewport-width) {
+            padding-bottom: 40px;
             font-size: 30px;
             text-align: center;
         }
     }
 
-    .about-the-chef-container {
+
+    .about-chef-image-container {
+        padding-right: 20px; 
+        padding-bottom: 30px;
         display: flex;
         flex-direction: column;
         gap: 24px;
-
         @media (min-width: $desktop-viewport-width) {
             flex-direction: row;
-            gap: 60px;
+            gap: 65px;
+            align-items: center;
         }
-
-        img {
-            height: 262px;
-            
+    
+        .chef-image {
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 380px;
+            background-size: cover;
+            position: relative;
             @media (min-width: $desktop-viewport-width) {
-
-                // min-width: 478px;
-                // min-height: 372px;
+                width: 4000px;
+                background-size:cover;
+                position: relative; 
+                max-height: 372px;
             }
 
+            .chef-name {
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+                background-color: $primary-color-white;
+                opacity: 80%;
+                width: 100%;
+                height: 20%;
+                @include font-style;
+                margin: 0;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 47px;
+                letter-spacing: 2.7px;
+                @media (min-width: $desktop-viewport-width) {
+                    font-size: 40px;
+                }
+            }
         }
-
-        .chef-description {
-            @include body-text;
+        
+        .chef-description {  
+            width: inherit;
+            display: flex;
+            text-align: flex-start;
+            @include h3;
+            font-weight: 200;
             line-height: 28px;
             letter-spacing: 1.25px;
-            text-align: left;
-            display: inline-block;
-
-
             @media (min-width: $desktop-viewport-width) {
                 font-size: 24px;
+                font-weight: 200;
                 line-height: 35px;
-                text-align: justified;
-
+                letter-spacing: 1.25px;
+                max-height: 372px;
+                max-height: inherit;
             }
         }
+        
     }
 
 
+
     .chef-restaurants-container {
+        padding-top: 32px;
         display: flex;
         flex-direction:column;
         .chef-restaurants-container-title {
             @include h2;
+            font-weight: 200;
             line-height: 25px;
+            letter-spacing: 1.25px;
             text-align: left;
+            font-size: 18px;
             @media (min-width: $desktop-viewport-width) {
                 line-height: 35px;
                 letter-spacing: 1.25px;
+                text-align: left;
             }
         }
-
     }
 }
