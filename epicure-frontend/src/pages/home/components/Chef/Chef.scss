@@ -5,8 +5,8 @@
     @include desktop-margin;
     display: flex;
     flex-direction:column;
+    margin-right: 0px;
     
-
     .chef-title {
         @include h2;
         font-size: 18px;
@@ -59,14 +59,10 @@
         }
     }
 
+
     .chef-restaurants-container {
         display: flex;
-        flex-direction: column;
-        margin-right: 0px;
-        @media (min-width: $desktop-viewport-width) {
-                
-        }
-    
+        flex-direction:column;
         .chef-restaurants-container-title {
             @include font-style;
             font-size: 16px;

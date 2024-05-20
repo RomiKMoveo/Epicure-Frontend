@@ -17,6 +17,33 @@ const Dish: React.FC = () => {
         icon: "spicy"
       },
       {
+        id: "14",
+        image: padKiMao,
+        title: "Pad Ki Mao",
+        type: "dish",
+        ingredients: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
+        price: 88,
+        icon: "spicy"
+      },
+      {
+        id: "15",
+        image: padKiMao,
+        title: "Pad Ki Mao",
+        type: "dish",
+        ingredients: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
+        price: 88,
+        icon: "spicy"
+      },
+      {
+        id: "16",
+        image: padKiMao,
+        title: "Pad Ki Mao",
+        type: "dish",
+        ingredients: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
+        price: 88,
+        icon: "spicy"
+      },
+      {
         id: "5",
         image: padKiMao,
         title: "Pad Ki Mao",

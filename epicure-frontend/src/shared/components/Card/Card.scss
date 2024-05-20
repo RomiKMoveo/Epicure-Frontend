@@ -2,11 +2,10 @@
 .card {
     width: $card-moblie-width; 
     background-color: $secondary-color-pearl;
-    display: flex;
     flex-direction: column;
     margin: 20px 0;
     border-radius: 2px;
-  
+    border-right: 24px solid $primary-color-white;
 
     &.chef {
         height: $card-moblie-height;
@@ -14,6 +13,8 @@
         @media (min-width: $desktop-viewport-width) {
             height: $card-chef-desktop-height;
             width: $card-chef-desktop-width;
+            border-right: 16px solid $primary-color-white;
+  
           
         }
     }
@@ -39,24 +40,6 @@
     .card-image {
         width: 100%;
         object-fit: cover;
-        
-        &.chef {
-            @media (min-width: $desktop-viewport-width) {
-                width: $card-chef-desktop-width;
-            }
-        }
-
-        &.restaurant{
-            @media (min-width: $desktop-viewport-width) {
-                width: $card-desktop-width;   
-            }
-        }
-
-        &.dish {
-            @media (min-width: $desktop-viewport-width) {
-                width: $card-desktop-width;   
-            }
-        }
     }
 
     .card-title{
