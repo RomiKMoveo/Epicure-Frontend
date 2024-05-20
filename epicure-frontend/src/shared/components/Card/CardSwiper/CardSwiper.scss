@@ -1,0 +1,21 @@
+@import "../../../../data/variables.scss";
+
+.card-container {
+   
+
+    .swiper {
+        margin-left: unset;
+        display: flex;
+        overflow: hidden;
+        flex-shrink: unset;
+
+        .swiper-slide {
+            .dish-card {
+                .description-meaning-container {
+                    height: 171px;
+                }
+            }
+        }
+
+    }
+}

@@ -58,8 +58,13 @@
         @include h3;
         line-height: 22px;
         letter-spacing: 3px;
-        text-align: left;
+        display: flex;
         flex-direction: column;
+        text-align: left;
+        padding: 5px 16px 16px;
+        gap: 10px;
+        flex-grow: 1;
+        justify-content: space-between;
 
         @media (min-width: $desktop-viewport-width) {
             text-align: center;
@@ -88,7 +93,6 @@
     .card-body {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         text-align: left;
         padding: 5px 16px 16px;
         gap: 10px;

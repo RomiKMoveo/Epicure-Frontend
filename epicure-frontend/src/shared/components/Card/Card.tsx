@@ -1,45 +1,37 @@
 import React from "react";
 import "./Card.scss";
 import { starImageArray } from "./starRating";
-import { CardInterface } from "./Card.type";
+import { CardProps } from "./Card.type";
 import nisIcon from "../../../assets/icons/nis-icon.svg";
 import IconsArray from "./iconsArray";
 
-const Card: React.FC<CardInterface> = ({
-  image,
-  title,
-  chefName,
-  restaurantName,
-  ingredients,
-  price,
-  stars,
-  icon,
-  type
-}) => {
+
+
+const Card: React.FC<CardProps> = ({ card, cardType }) => {
   return (
-    <div className={`card ${type}`}>
+    <div className={`card ${card.type}`}>
       <figure>
-        <img src={image} alt={title} className={`card-image ${type}`}/>
-        <figcaption className={`card-title ${type}`}>{title}</figcaption>
+        <img src={card.image} alt={card.title} className={`card-image ${card.type}`}/>
+        <figcaption className={`card-title ${card.type}`}>{card.title}</figcaption>
       </figure>
-      <div className={`card-body ${type}`}>
-        <div className={`chef-name ${type}`}>{chefName}</div>
-          {stars && 
-           <div className={`stars-rating ${type}`}>
-            <img src={starImageArray[stars]} alt="stars-rating" />
+      <div className={`card-body ${card.type}`}>
+        <div className={`chef-name ${card.type}`}>{card.chefName}</div>
+          {card.stars && 
+           <div className={`stars-rating ${card.type}`}>
+            <img src={starImageArray[card.stars]} alt="stars-rating" />
           </div>
         }
-        {icon &&
-          <div className={`icon-container ${type}`}>
-            <img src={IconsArray[icon]} alt="Icon name" />
+        {card.icon &&
+          <div className={`icon-container ${card.type}`}>
+            <img src={IconsArray[card.icon]} alt="Icon name" />
           </div>
         }
-        <div>{ingredients && <span className={`ingredients ${type}`}>{ingredients}</span>}</div>
-        {price &&
-          <div className={`price ${type}`}>
+        <div>{card.ingredients && <span className={`ingredients ${card.type}`}>{card.ingredients}</span>}</div>
+        {card.price &&
+          <div className={`price ${card.type}`}>
             <hr />
-            <img src={nisIcon} alt="ils" className={`nis-icon ${type}`} />
-            <span className={`price-value ${type}`}>{price} </span>
+            <img src={nisIcon} alt="ils" className={`nis-icon ${card.type}`} />
+            <span className={`price-value ${card.type}`}>{card.price} </span>
             <hr />
           </div>
         }
