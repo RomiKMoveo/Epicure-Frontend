@@ -47,14 +47,14 @@
     color: $primary-color-black;
 }
 
-@mixin button {
+@mixin button-text {
     @include font-style;
     font-weight: 200;
     font-size: 16px;
     color: $primary-color-white;
 }
 
-@mixin input-text() {
+@mixin input-text {
     @include font-style;
     font-weight: 200;
     font-size: 16px;
