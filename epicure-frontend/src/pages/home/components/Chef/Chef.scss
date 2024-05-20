@@ -21,12 +21,64 @@
         }
     }
 
-    .card-container {
+    .about-the-chef-container {
         display: flex;
         flex-direction: column;
-        margin-left: 20px;
-        margin-right: 0px;
+        gap: 24px;
+
+        @media (min-width: $desktop-viewport-width) {
+            flex-direction: row;
+            gap: 60px;
+        }
+
+        img {
+            height: 262px;
+            
+            @media (min-width: $desktop-viewport-width) {
+
+                // min-width: 478px;
+                // min-height: 372px;
+            }
+
+        }
+
+        .chef-description {
+            @include body-text;
+            line-height: 28px;
+            letter-spacing: 1.25px;
+            text-align: left;
+            display: inline-block;
+
+
+            @media (min-width: $desktop-viewport-width) {
+                font-size: 24px;
+                line-height: 35px;
+                text-align: justified;
+
+            }
+        }
     }
 
-              
+    .chef-restaurants-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+        @media (min-width: $desktop-viewport-width) {
+                
+        }
+    
+        .chef-restaurants-container-title {
+            @include font-style;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: left;
+
+            @media (min-width: $desktop-viewport-width) {
+                font-size: 30px;
+                line-height: 35px;
+                letter-spacing: 1.25px;
+            }
+        }
+
+    }
 }
