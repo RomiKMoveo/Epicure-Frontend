@@ -1,19 +1,20 @@
 @import "../../../../data/types/typography.scss";
 @import "../../../../data/variables.scss";
 
-.chef-container {
+.dish-container {
     @include desktop-margin;
     display: flex;
     flex-direction:column;
     
 
-    .chef-title {
+    .dish-title {
         @include h2;
         font-size: 18px;
         line-height: 35px;
         letter-spacing: 1.25px;
         text-align: left;
         transition: var(--transition-time);
+        text-transform: uppercase;
 
         @media (min-width: $desktop-viewport-width) {
             font-size: 30px;
@@ -27,6 +28,5 @@
         margin-left: 20px;
         margin-right: 0px;
     }
-
               
 }

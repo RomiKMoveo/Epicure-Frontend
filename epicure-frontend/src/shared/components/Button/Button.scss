@@ -1,27 +1,38 @@
-@import "../../../data/types/typography.scss", "../../../data/variables.scss", "../../../data/UI/colors.scss..";
+@import "../../../data/types/typography.scss", "../../../data/variables.scss", "../../../data/UI/colors.scss";
 
-.btn {
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  cursor: pointer;
-  @include button();
-  height: 1000px;
-  width: 206px;
-  height: 48px;
-  .icon-container {
+.button-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  
+  @media (min-width: $desktop-viewport-width) {
     display: none;
   }
-}
 
-.icon-btn {
-  gap: 10px;
-  .icon-container {
-    display: block;
-    width: 21px;
-    height: 24px;
+
+  button {
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    @include button();
+    height: 1000px;
+    width: 206px;
+    height: 48px;
+    .icon-container {
+      display: none;
+    }
   }
-}
-.disabled {
-  background-color: $secondary-gray;
-  cursor: no-drop;
+
+  .icon-btn {
+    gap: 10px;
+    .icon-container {
+      display: block;
+      width: 21px;
+      height: 24px;
+    }
+  }
+  .disabled {
+    background-color: $primary-color-gray;
+    cursor: no-drop;
+  }
 }
