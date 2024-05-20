@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import claroImage from "../../../../assets/images/claro.svg"
 import CardSwipper from "../../../../shared/components/Card/CardSwiper/CardSwiper";
-import yossisImage from "../../../../assets/images/Shef.svg";
+import yossisImage from "../../../../assets/images/yossi-shitrit-image.svg";
 
 const Chef: React.FC = () => {
   const chefData: CardList = {
