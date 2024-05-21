@@ -40,43 +40,13 @@
     .card-image {
         width: 100%;
         object-fit: cover;
-    }
-
-    .card-title{
-        @include h3;
-        line-height: 22px;
-        letter-spacing: 3px;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        padding: 16px 0px 0px 16px  ;
-        flex-grow: 1;
-       
+        height: 152px;
         @media (min-width: $desktop-viewport-width) {
-            text-align: center;
-            align-items: center;
-            letter-spacing: 4px;
-            line-height: 47px;
-            padding-top: 20px;
-        
-           
+            height: 236px;
         }
-        
-        &.chef {
-            @media (min-width: $desktop-viewport-width) {
-                font-size: 30px;
-            }
-        }
-        &.dish {
-            @media (min-width: $desktop-viewport-width) {
-                margin-left: 60px;
-                margin-right: 60px;
-            }
-        }
-
-
     }
 
+    
     .card-body {
         display: flex;
         flex-direction: column;
@@ -84,11 +54,42 @@
         padding: 10px 16px 16px;
         gap: 16px;
         flex-grow: 1;
-
         @media (min-width: $desktop-viewport-width) {
             align-items: center;   
-          
         }
+
+        .card-title{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            @include h3;
+            line-height: 22px;
+            letter-spacing: 3px;
+            @media (min-width: $desktop-viewport-width) {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                letter-spacing: 4px;
+                line-height: 47px;
+            }
+
+            &.chef {
+                @media (min-width: $desktop-viewport-width) {
+                    font-size: 30px;
+                    margin-left: 60px;
+                    margin-right: 60px;
+                }
+            }
+            &.dish {
+                @media (min-width: $desktop-viewport-width) {
+                    margin-left: 60px;
+                    margin-right: 60px;
+                }
+            }
+        }
+    
         
         &.restaurant {
             .chef-name {
@@ -107,6 +108,7 @@
         }
         &.dish {
             .icon-container {
+                display: flex;
                 order: 1;
                 gap: 10px;
                 @media (min-width: $desktop-viewport-width) {
@@ -125,10 +127,8 @@
 
             .ingredients {
                 @include body-text;
-                flex-grow: 1; 
                 display: flex;
                 flex-direction: column;
-                text-align: left;
                 line-height: 20px;
                 letter-spacing: 2px;
                 order: 0;
@@ -136,6 +136,9 @@
         
         
                 @media (min-width: $desktop-viewport-width) {
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column-reverse;
                     text-align: center;
                     font-size: 24px;
                     line-height: 30px;
@@ -151,6 +154,9 @@
             .price {
                 order: 2;
                 display: flex;
+                align-items: flex-start;
+                height: 0.5px;
+                margin: 6px;
                 @media (min-width: $desktop-viewport-width) {
                     justify-content: center;
                     align-items: center; 

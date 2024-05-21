@@ -10,11 +10,9 @@ import IconsArray from "./iconsArray";
 const Card: React.FC<CardProps> = ({ card, cardType }) => {
   return (
     <div className={`card ${card.type}`}>
-      <figure>
-        <img src={card.image} alt={card.title} className={`card-image ${card.type}`}/>
-        <figcaption className={`card-title ${card.type}`}>{card.title}</figcaption>
-      </figure>
+      <img src={card.image} alt={card.title} className={`card-image ${card.type}`}/>
       <div className={`card-body ${card.type}`}>
+        <div className={`card-title ${card.type}`}>{card.title}</div>
         <div className={`chef-name ${card.type}`}>{card.chefName}</div>
           {card.stars && 
            <div className={`stars-rating ${card.type}`}>

@@ -1,9 +1,14 @@
-import Button from "../../../../shared/components/Button/Button";
-import "./Restaurant.scss";
-import allCardsIcon from "../../../../assets/icons/all-resturant-icon.svg";
-import claroImage from "../../../../assets/images/claro.svg"
 import { CardList, cardType } from "../../../../shared/components/Card/CardSwiper/CardSwiper.type";
 import CardSwipper from "../../../../shared/components/Card/CardSwiper/CardSwiper";
+
+import "./Restaurant.scss";
+import Button from "../../../../shared/components/Button/Button";
+import allCardsIcon from "../../../../assets/icons/all-resturant-icon.svg";
+import claroImage from "../../../../assets/images/claro.svg"
+import luminaImage from "../../../../assets/images/lumina.svg";
+import tigerLillyImage from "../../../../assets/images/tiger-lily.svg";
+import kabKemImage from "../../../../assets/images/Kab kem 2.svg";
+import yaPanImage from "../../../../assets/images/Yapan.svg";
 
 const Restaurant: React.FC = () => {
 
@@ -14,39 +19,39 @@ const Restaurant: React.FC = () => {
       title: "Claro",
       type: "restaurant",
       chefName: "Ran Shmueli",
-      stars: 4,
+      stars: 3,
     },
     {
       id: "7",
-      image: claroImage,
-      title: "Claro",
+      image: luminaImage,
+      title: "Lumina",
       type: "restaurant",
-      chefName: "Ran Shmueli",
-      stars: 4,
+      chefName: "Meir Adoni",
+      stars: 3,
     },
     {
       id: "8",
-      image: claroImage,
-      title: "Claro",
+      image: tigerLillyImage,
+      title: "Tiger Lilly",
       type: "restaurant",
-      chefName: "Ran Shmueli",
-      stars: 4,
+      chefName: "Yanir Green",
+      stars: 1,
     },
     {
       id: "9",
-      image: claroImage,
-      title: "Claro",
+      image: kabKemImage,
+      title: "Kab Kem",
       type: "restaurant",
-      chefName: "Ran Shmueli",
+      chefName: "Yariv Malili",
       stars: 4,
     },
     {
       id: "10",
-      image: claroImage,
-      title: "Claro",
+      image: yaPanImage,
+      title: "Ya Pan",
       type: "restaurant",
-      chefName: "Ran Shmueli",
-      stars: 4,
+      chefName: "Yuval ben Neria",
+      stars: 2,
     }],
     cardType: cardType.DISH,
   };

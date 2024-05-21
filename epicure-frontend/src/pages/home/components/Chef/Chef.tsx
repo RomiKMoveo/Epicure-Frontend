@@ -1,34 +1,37 @@
-import "./Chef.scss";
-import allCardsIcon from "../../../../assets/icons/all-resturant-icon.svg";
-import Button from "../../../../shared/components/Button/Button";
 import 'swiper/css';
 import { CardList, cardType } from "../../../../shared/components/Card/CardSwiper/CardSwiper.type";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import claroImage from "../../../../assets/images/claro.svg"
+
+import "./Chef.scss";
+import allCardsIcon from "../../../../assets/icons/all-resturant-icon.svg";
+import Button from "../../../../shared/components/Button/Button";
 import CardSwipper from "../../../../shared/components/Card/CardSwiper/CardSwiper";
 import yossisImage from "../../../../assets/images/yossi-shitrit-image.svg";
+import OnzaImage from "../../../../assets/images/onza.svg";
+import kitchenMarketImage from "../../../../assets/images/kitchen-market.svg";
+import MashyaImage from "../../../../assets/images/mashya.svg"
 
 const Chef: React.FC = () => {
   const chefData: CardList = {
     cards: [{
       id: "1",
-      image: claroImage,
-      title: "Claro",
+      image: OnzaImage,
+      title: "Onza",
       type: "restaurant",
       
     },
     {
       id: "2",
-      image: claroImage,
-      title: "Claro",
+      image: kitchenMarketImage,
+      title: "Kitchen Market",
       type: "restaurant",
       
     },
     {
       id: "3",
-      image: claroImage,
-      title: "Claro",
+      image: MashyaImage,
+      title: "Mashya",
       type: "restaurant",
       
     }],

@@ -1,24 +1,20 @@
+import CardSwipper from "../../../../shared/components/Card/CardSwiper/CardSwiper";
+import { CardList, cardType } from "../../../../shared/components/Card/CardSwiper/CardSwiper.type";
+
 import "./Dish.scss";
 import allCardsIcon from "../../../../assets/icons/all-resturant-icon.svg";
 import Button from "../../../../shared/components/Button/Button";
-import padKiMao from "../../../../assets/images/pad-ki-mao.svg";
-import CardSwipper from "../../../../shared/components/Card/CardSwiper/CardSwiper";
-import { CardList, cardType } from "../../../../shared/components/Card/CardSwiper/CardSwiper.type";
+import padKiMaoImage from "../../../../assets/images/pad-ki-mao.svg";
+import garbanzoFritoImage from "../../../../assets/images/garbanzo-frito.svg";
+import smokedPizzaImage from "../../../../assets/images/smoked-pizza.svg";
+import redFarmImage from "../../../../assets/images/red-farm.svg";
+import taMaLaKoImage from "../../../../assets/images/ta ma la ko.svg";
 
 const Dish: React.FC = () => {
   const dishesData: CardList = {
       cards: [{
         id: "4",
-        image: padKiMao,
-        title: "Pad Ki Mao",
-        type: "dish",
-        ingredients: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
-        price: 88,
-        icon: "spicy"
-      },
-      {
-        id: "14",
-        image: padKiMao,
+        image: padKiMaoImage,
         title: "Pad Ki Mao",
         type: "dish",
         ingredients: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
@@ -27,30 +23,39 @@ const Dish: React.FC = () => {
       },
       {
         id: "15",
-        image: padKiMao,
-        title: "Pad Ki Mao",
+        image: garbanzoFritoImage,
+        title: "Garbanzo Frito",
         type: "dish",
-        ingredients: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
-        price: 88,
+        ingredients: "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
+        price: 98,
         icon: "spicy"
       },
       {
-        id: "16",
-        image: padKiMao,
-        title: "Pad Ki Mao",
+        id: "14",
+        image: smokedPizzaImage,
+        title: "Smoked Pizza",
         type: "dish",
-        ingredients: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
-        price: 88,
+        ingredients: "Basil dough, cashew butter, demi-glace,bison & radish",
+        price: 65,
+        icon: "vegan"
+      },
+      {
+        id: "16",
+        image: taMaLaKoImage,
+        title: "Ta Ma La Ko",
+        type: "dish",
+        ingredients: "Tofu, Spekkoek Peanuts, Spicy Manis, Pear Yakitori",
+        price: 98,
         icon: "spicy"
       },
       {
         id: "5",
-        image: padKiMao,
-        title: "Pad Ki Mao",
+        image: redFarmImage,
+        title: "Red Farm",
         type: "dish",
-        ingredients: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
-        price: 88,
-        icon: "spicy"
+        ingredients: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
+        price: 65,
+        icon: "vegetarian"
       }],
       cardType: cardType.RESTAURANT
     }
