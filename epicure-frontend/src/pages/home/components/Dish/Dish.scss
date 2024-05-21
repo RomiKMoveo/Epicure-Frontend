@@ -5,6 +5,7 @@
     @include desktop-margin;
     display: flex;
     flex-direction:column;
+    margin-right: 0px;
     
 
     .dish-title {
@@ -22,11 +23,5 @@
         }
     }
 
-    .card-container {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        margin-right: 0px;
-    }
               
 }

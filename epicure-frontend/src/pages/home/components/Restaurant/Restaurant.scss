@@ -5,6 +5,7 @@
     @include desktop-margin;
     display: flex;
     flex-direction:column;
+    margin-right: 0px; 
     
 
     .restaurant-title {
@@ -20,21 +21,6 @@
             font-size: 30px;
             text-align: center;
         }
-    }
-    .card-container {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        margin-right: 0px;
-    }
-
-    .restaurant-button {
-        @include button;
-        color: $primary-color-black;
-        font-family: Helvetica Neue;
-        font-weight: 400;
-        line-height: 35px;
-        letter-spacing: 2px;
     }
               
 }

@@ -6,19 +6,17 @@
     padding-top: 5px;
     padding-bottom: 5px; 
 
-    .header-menu {
+    nav{
         @include h2;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        .left-menu {
+        .left-nav {
             display: flex;
             justify-content: space-between;
             width: 100%;
             align-items: center;
-            
-
             @media (min-width: $desktop-viewport-width) {
                 justify-content: unset;
                 gap: 32px;
@@ -26,7 +24,6 @@
 
             .hamburger {
                 display: flex;
-                
                 @media (min-width: $desktop-viewport-width) {
                     display: none;
                 }
@@ -53,7 +50,6 @@
 
                 .epicure-name {
                     display: none;
-
                     @media (min-width: $desktop-viewport-width) {
                         display: flex;
                         align-items: center;
@@ -65,7 +61,6 @@
             .hamburger-menu {
                 display: none;
                 @include h1;
-
                 @media (min-width: $desktop-viewport-width) {
                     display: flex;  
                     align-items: center;  
@@ -76,13 +71,12 @@
             }
         }
 
-        .right-menu { 
+        .right-nav { 
             display: flex;
             align-items: center;
             gap: 20px;
             width: 100%;
             justify-content: flex-end;
-
             @media (min-width: $desktop-viewport-width) {
                 gap: 24px;
             }
@@ -91,7 +85,6 @@
                 height: 20px;
                 width: 20px;
                 cursor: pointer;
-
                 @media (min-width: $desktop-viewport-width) {
                     height: 24px;
                     width: 24px;

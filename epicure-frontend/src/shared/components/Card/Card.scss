@@ -2,15 +2,20 @@
 .card {
     width: $card-moblie-width; 
     background-color: $secondary-color-pearl;
-    display: flex;
     flex-direction: column;
     margin: 20px 0;
+    border-radius: 2px;
+    border-right: 24px solid $primary-color-white;
 
     &.chef {
         height: $card-moblie-height;
+        
         @media (min-width: $desktop-viewport-width) {
             height: $card-chef-desktop-height;
             width: $card-chef-desktop-width;
+            border-right: 16px solid $primary-color-white;
+  
+          
         }
     }
 
@@ -33,39 +38,28 @@
     }
 
     .card-image {
-        width: $card-moblie-width;
-
-        &.chef {
-            @media (min-width: $desktop-viewport-width) {
-                width: $card-chef-desktop-width;
-            }
-        }
-
-        &.restaurant{
-            @media (min-width: $desktop-viewport-width) {
-                width: $card-desktop-width;   
-            }
-        }
-
-        &.dish {
-            @media (min-width: $desktop-viewport-width) {
-                width: $card-desktop-width;   
-            }
-        }
+        width: 100%;
+        object-fit: cover;
     }
 
     .card-title{
         @include h3;
         line-height: 22px;
         letter-spacing: 3px;
-        text-align: left;
+        display: flex;
         flex-direction: column;
-
+        text-align: left;
+        padding: 16px 0px 0px 16px  ;
+        flex-grow: 1;
+       
         @media (min-width: $desktop-viewport-width) {
             text-align: center;
+            align-items: center;
             letter-spacing: 4px;
             line-height: 47px;
             padding-top: 20px;
+        
+           
         }
         
         &.chef {
@@ -74,12 +68,10 @@
             }
         }
         &.dish {
-            padding-top: 20px;
             @media (min-width: $desktop-viewport-width) {
-                padding-left: 100px;
-                padding-right: 100px;
-                  
-            } 
+                margin-left: 60px;
+                margin-right: 60px;
+            }
         }
 
 
@@ -88,12 +80,10 @@
     .card-body {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         text-align: left;
-        padding: 5px 16px 16px;
-        gap: 10px;
+        padding: 10px 16px 16px;
+        gap: 16px;
         flex-grow: 1;
-        justify-content: space-between;
 
         @media (min-width: $desktop-viewport-width) {
             align-items: center;   
@@ -110,13 +100,15 @@
             .stars-rating {
                 display: none;
                 @media (min-width: $desktop-viewport-width) { 
-                    display: block;
+                    display: flex;
+                    align-items: center;
                 }
             }
         }
         &.dish {
             .icon-container {
                 order: 1;
+                gap: 10px;
                 @media (min-width: $desktop-viewport-width) {
                     order: 0;
                 }
@@ -146,8 +138,9 @@
                 @media (min-width: $desktop-viewport-width) {
                     text-align: center;
                     font-size: 24px;
-                    font-family: Helvetica Neue;
                     line-height: 30px;
+                    margin-left: 40px;
+                    margin-right: 40px;
                     order: 1;
                 
         
@@ -160,7 +153,8 @@
                 display: flex;
                 @media (min-width: $desktop-viewport-width) {
                     justify-content: center;
-                    align-items: center;   
+                    align-items: center; 
+                    padding-top: 10px;  
                 }
         
                 hr {
@@ -175,9 +169,6 @@
                     }
                 }
                 .nis-icon {
-                    width: 7.26px;
-                    height: 6.67px;
-                    border: none;
                     @media (min-width: $desktop-viewport-width) {
                         width: 12.54px;
                         height: 11.52px;

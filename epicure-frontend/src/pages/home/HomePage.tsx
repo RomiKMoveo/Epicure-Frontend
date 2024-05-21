@@ -8,11 +8,7 @@ import Hero from "./components/Hero/Hero";
 import IconsMeaning from "./components/IconsMeaning/IconsMeaning";
 import Restaurant from "./components/Restaurant/Restaurant";
 
-
-
-
 const HomePage: React.FC = () => {
-
   return (
     <>
       <div className="home-page">

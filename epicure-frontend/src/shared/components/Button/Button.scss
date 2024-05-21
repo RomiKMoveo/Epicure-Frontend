@@ -12,12 +12,6 @@
 
   button {
     border: none;
-    box-sizing: border-box;
-    cursor: pointer;
-    @include button();
-    height: 1000px;
-    width: 206px;
-    height: 48px;
     .icon-container {
       display: none;
     }

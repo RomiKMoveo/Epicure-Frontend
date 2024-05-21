@@ -13,8 +13,8 @@ const Header: React.FC = () => {
   return (
     <>
     <header className="header">
-      <div className="header-menu">
-        <div className='left-menu'>
+      <nav>
+        <div className='left-nav'>
           <div className='hamburger-container'>
             <img className="hamburger" src={hamburger} alt="Epicure Logo" />
           </div>
@@ -30,12 +30,12 @@ const Header: React.FC = () => {
             <div>Chefs</div>
           </div>
         </div>
-        <nav className="right-menu">
+        <div className="right-nav">
           <img src={searchIcon} alt="Magnifying Glass" />
           <img src={userIcon} alt="User Icon" />
           <img src={bagIcon} alt="Bag Icon" />
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
   </>
 );
