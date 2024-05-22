@@ -42,14 +42,15 @@
         .chef-image {
             background-position: center;
             background-repeat: no-repeat;
-            height: 380px;
+            height: 400px;
             background-size: cover;
             position: relative;
             @media (min-width: $desktop-viewport-width) {
                 width: 4000px;
                 background-size:cover;
-                position: relative; 
-                max-height: 372px;
+                max-height: 400px;
+                
+                
             }
 
             .chef-name {

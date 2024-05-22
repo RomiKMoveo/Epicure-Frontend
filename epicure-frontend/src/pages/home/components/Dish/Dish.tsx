@@ -35,7 +35,7 @@ const Dish: React.FC = () => {
         image: smokedPizzaImage,
         title: "Smoked Pizza",
         type: "dish",
-        ingredients: "Basil dough, cashew butter, demi-glace,bison & radish",
+        ingredients: "Basil dough, cashew butter, demi-glace,bison & radish, demi-glace,bison & radish",
         price: 65,
         icon: "vegan"
       },
@@ -44,7 +44,7 @@ const Dish: React.FC = () => {
         image: taMaLaKoImage,
         title: "Ta Ma La Ko",
         type: "dish",
-        ingredients: "Tofu, Spekkoek Peanuts, Spicy Manis, Pear Yakitori",
+        ingredients: "Tofu, Spekkoek Peanuts, Spicy Manis, Pear Yakitori, Spicy Manis, Pear Yakitori",
         price: 98,
         icon: "spicy"
       },
