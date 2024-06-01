@@ -18,11 +18,11 @@ const CardSwipper: React.FC<CardList> = ({ cards, cardType }) => {
         modules={[Navigation]}
         navigation={{
           nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          prevEl: '.swiper-button-prev'
         }}
       >
         {cards.map((card: CardInterface) => (
-          <SwiperSlide key={card.id}>
+          <SwiperSlide key={card._id}>
             <Card card={card} cardType={cardType} />
           </SwiperSlide>
         ))}

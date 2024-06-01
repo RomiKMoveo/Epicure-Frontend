@@ -6,7 +6,7 @@ export interface CardList {
 }
 
 export enum cardType {
-    DISH = "dish",
-    RESTAURANT = "restaurant",
-    CHEF = "chef",
+    dish = "dish",
+    restaurant = "restaurant",
+    chef = "chef",
 }

@@ -1,7 +1,7 @@
 import { cardType } from "./CardSwiper/CardSwiper.type";
 
 export interface CardInterface {
-    id: string;
+    _id: string;
     image: string;
     title: string;
     chefName?: string;

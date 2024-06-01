@@ -76,6 +76,7 @@
             }
 
             &.chef {
+                padding-bottom: 0;
                 @media (min-width: $desktop-viewport-width) {
                     font-size: 30px;
                     margin-left: 60px;
