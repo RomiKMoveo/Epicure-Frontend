@@ -17,18 +17,21 @@ const CardSwipper: React.FC<CardList> = ({ cards, cardType }) => {
       <Swiper
         modules={[Navigation]}
         navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        }}
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }}
       >
-        {cards.map((card: CardInterface) => (
-          <SwiperSlide key={card._id}>
-            <Card card={card} cardType={cardType} />
-          </SwiperSlide>
-        ))}
+        <div className='cards-swipper'>
+          {cards.map((card: CardInterface) => (
+            <SwiperSlide key={card._id}>
+              <Card card={card} cardType={cardType} />
+            </SwiperSlide>
+          ))}
+        </div>
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
       </Swiper>
-      <div className="swiper-button-prev"></div>
-      <div className="swiper-button-next"></div>
+      
     </div>
   );
 };
