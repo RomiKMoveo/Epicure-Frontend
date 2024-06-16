@@ -1,4 +1,13 @@
 @import "../../../../data/variables.scss";
+    
+#root {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
 
 .card-container {
     display: flex;
@@ -25,40 +34,6 @@
             width: auto !important;
         }
     }
+    
 }
 
-.card-container {
-    position: relative;
-    
-    .swiper {
-      padding: 0 40px; // Add padding to prevent cards from hiding behind the buttons
-    }
-  
-    .swiper-button-prev,
-    .swiper-button-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 40px;
-      height: 40px;
-      background-color: rgba(0, 0, 0, 0.5); // Customize button background color
-      color: white; // Customize button icon color
-      z-index: 10;
-      cursor: pointer;
-  
-      &:after {
-        font-size: 20px;
-      }
-    }
-  
-    .swiper-button-prev {
-      left: 0; // Position the left arrow
-    }
-  
-    .swiper-button-next {
-      right: 0; // Position the right arrow
-    }
-  }
-  
-      
-  
