@@ -3,7 +3,7 @@ import { IChef } from '../shared/components/Card/models/chef.models';
 import { CardInterface } from '../shared/components/Card/Card.type';
 
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'http://ec2-16-171-161-251.eu-north-1.compute.amazonaws.com/api';
 
 export const getPopularRestaurants = async () => {
     try {
